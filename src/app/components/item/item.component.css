@@ -1,16 +1,18 @@
 .row{
-    display: flex;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
-.completed{
-    color: #ccc;
-    text-decoration: line-through;
-}
-.completed .total{
-    color: #ccc;
+.row:hover{
+    border-radius: 3px;
+    background: #eee;
 }
 div{
     padding: 5px 0;
+}
+.completed{
+    color: #ddd;
+    text-decoration: line-through;
 }
 .title{
     display: flex;
@@ -25,6 +27,9 @@ div{
     width: 10%;
     padding: 0 5px;
 }
+.completed .total{
+    color: #ddd;
+}
 .total{
     width: 15%;
     font-weight: bolder;
@@ -34,6 +39,18 @@ div{
 .actions{
     width: 10%;
     text-align: center;
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding: 0 5px;
+}
+.actions button{
+    border: none;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.actions button:hover{
+    background-color: darkred;
 }
