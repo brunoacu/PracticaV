@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemService } from 'src/app/services/item.service';
 import { Item } from '../../models/item';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-additem',
@@ -23,7 +23,9 @@ export class AdditemComponent implements OnInit{
     item.quantity = this.quantity;
     item.completed = false;
 
-    this.itemService.addItem(item);
-    this.router.navigate(['/']);
+    this.itemService.addItem(item).subscribe(i => {
+      this.router.navigate(['/']);
+    });
+   
   }
 }

@@ -5,13 +5,13 @@
 }
 .row:hover{
     border-radius: 3px;
-    background: #eee;
+    background: #ffffff;
 }
 div{
     padding: 5px 0;
 }
 .completed{
-    color: #ddd;
+    color: #000000;
     text-decoration: line-through;
 }
 .title{
